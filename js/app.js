@@ -756,7 +756,6 @@ app_angular.controller('sessionController',['bootbox','Conexion','$scope','$loca
         $scope.usuario=$scope.sessiondate.nombre_usuario;
         $scope.codigoempresa=$scope.sessiondate.codigo_empresa;         
         CRUD.selectAllinOne('select *from crm_actividades where sincronizado="false"',function(Actividad){
-            debugger
             if (Actividad.length==0) {
                 $scope.MensajeEnvioVacioAct=1;
             }
