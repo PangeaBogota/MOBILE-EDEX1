@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.pangea.pedidosnlineedex"
+        versionCode = "35"
+        version   = "1.2.2">
+
+
+
+    <name>Pedidos Online</name>
+
+    <description>
+        www.pedidosonline.co
+    </description>
+
+    <author href="http://phonegap.com" email="support@phonegap.com">
+        Pangea Team
+    </author>
+   <gap:platforms>
+        <gap:platform name="android" minVersion="2.1" />
+        <gap:platform name="webos" />
+        <gap:platform name="symbian.wrt" />
+        <gap:platform name="blackberry" project="widgets"/>
+    </gap:platforms>
+
+    <icon src="icon.png" gap:role="default" />
+
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <plugin name="cordova-plugin-geolocation" source="npm" />
+
+    <!-- sample preference specification -->
+    <!-- <preference name="autorotate" value="false" readonly="true"/> -->
+</widget>
