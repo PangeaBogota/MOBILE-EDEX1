@@ -191,6 +191,7 @@ app_angular.controller("actividadesController",['Conexion','$scope', '$routePara
 			$scope.NuevoEvento.fecha_final=$scope.selectedDate($scope.horario.fechaFinal)+' '+$scope.getHour($scope.horario.horaFinal) ;
 			$scope.NuevoEvento.longitud=$scope.Longitud;
 			$scope.NuevoEvento.latitud=$scope.Latitude;
+			
 			$scope.NuevoEvento.fecha_creacion=$scope.CurrentDate();
 			CRUD.insert('crm_actividades',$scope.NuevoEvento)
 			$scope.NuevoEvento=[];
